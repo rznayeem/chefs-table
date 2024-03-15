@@ -7,6 +7,7 @@ function App() {
     <>
       <header className="container mx-auto">
         <Navbar></Navbar>
+        <Banner></Banner>
       </header>
     </>
   );
