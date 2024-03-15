@@ -21,7 +21,7 @@ const Banner = () => {
           }}
         ></div>
         <div className="hero-content text-center text-white">
-          <div className="">
+          <div>
             <h1 className="mb-5 lg:text-[52px] text-[32px] font-semibold lg:font-bold">
               Discover an exceptional cooking <br className="lg:flex hidden" />{' '}
               class tailored for you!

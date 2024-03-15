@@ -1,0 +1,94 @@
+[
+  {
+    "image": "https://i.ibb.co/Fqqyr7b/Classic-Cheeseburger-min.jpg",
+    "id": "1",
+    "name": "Classic Cheeseburger",
+    "description": "A juicy beef patty topped with melted cheese, fresh lettuce, tomatoes, and pickles, sandwiched between soft burger buns.",
+    "ingredients": [
+      "200 g beef patty",
+      "2 slices cheese",
+      "Lettuce",
+      "Tomato slices",
+      "Pickles",
+      "2 burger buns"
+    ],
+    "time": 20,
+    "calories": 450
+  },
+  {
+    "image": "https://i.ibb.co/GvvgjBR/Caprese-Salad-min.jpg",
+    "id": "2",
+    "name": "Caprese Salad",
+    "description": "A refreshing salad featuring ripe tomatoes, fresh mozzarella cheese, and fragrant basil leaves, drizzled with balsamic glaze.",
+    "ingredients": [
+      "2 tomatoes",
+      "200 g fresh mozzarella",
+      "Basil leaves",
+      "Balsamic glaze"
+    ],
+    "time": 10,
+    "calories": 250
+  },
+  {
+    "image": "https://i.ibb.co/crybdLG/Spaghetti-Carbonara-min.jpg",
+    "id": "3",
+    "name": "Spaghetti Carbonara",
+    "description": "A creamy pasta dish made with spaghetti, crispy bacon, Parmesan cheese, and a rich egg-based sauce.",
+    "ingredients": [
+      "200 g spaghetti",
+      "100 g bacon",
+      "2 eggs",
+      "50 g Parmesan cheese",
+      "Black pepper"
+    ],
+    "time": 25,
+    "calories": 400
+  },
+  {
+    "image": "https://i.ibb.co/Qj6QTCb/Grilled-Chicken-Caesar-Salad-min.jpg",
+    "id": "4",
+    "name": "Grilled Chicken Caesar Salad",
+    "description": "Grilled chicken breast served on a bed of crisp romaine lettuce, tossed with Caesar dressing, croutons, and Parmesan cheese.",
+    "ingredients": [
+      "1 chicken breast",
+      "Romaine lettuce",
+      "Caesar dressing",
+      "Croutons",
+      "Parmesan cheese"
+    ],
+    "time": 15,
+    "calories": 320
+  },
+  {
+    "image": "https://i.ibb.co/tQVsqrP/Vegetable-Stir-Fry-min.jpg",
+    "id": "5",
+    "name": "Vegetable Stir-Fry",
+    "description": "A colorful stir-fry featuring a variety of fresh vegetables, cooked in a savory sauce and served over steamed rice.",
+    "ingredients": [
+      "Broccoli florets",
+      "Bell peppers",
+      "Carrots",
+      "Snap peas",
+      "Soy sauce",
+      "Steamed rice"
+    ],
+    "time": 30,
+    "calories": 280
+  },
+  {
+    "image": "https://i.ibb.co/smbFBfS/Homemade-Pizza-min.jpg",
+    "id": "6",
+    "name": "Homemade Pizza",
+    "description": "A homemade pizza with a crispy crust topped with tangy tomato sauce, gooey mozzarella cheese, and your favorite toppings.",
+    "ingredients": [
+      "Pizza dough",
+      "Tomato sauce",
+      "Mozzarella cheese",
+      "Pepperoni slices",
+      "Bell peppers",
+      "Onions"
+    ],
+    "time": 35,
+    "calories": 380
+  }
+]
