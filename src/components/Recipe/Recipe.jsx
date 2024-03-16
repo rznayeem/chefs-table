@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Ingredient from './Ingredient/Ingredient';
 import { FaRegClock } from 'react-icons/fa6';
 import { AiOutlineFire } from 'react-icons/ai';
-const Recipe = ({ recipe }) => {
+const Recipe = ({ handleCookBtn, recipe }) => {
   const { image, id, name, description, ingredients, time, calories } = recipe;
 
   return (
@@ -16,8 +16,8 @@ const Recipe = ({ recipe }) => {
         <hr />
         <h3>Ingredients: {ingredients.length}</h3>
         <ul className="list-disc ml-4 min-h-36">
-          {ingredients.map(ingredient => (
-            <Ingredient key={id} ingredient={ingredient}></Ingredient>
+          {ingredients.map((ingredient, idx) => (
+            <Ingredient key={idx} ingredient={ingredient}></Ingredient>
           ))}
         </ul>
         <hr />
@@ -30,7 +30,12 @@ const Recipe = ({ recipe }) => {
           </div>
         </div>
         <div className="card-actions">
-          <button className="btn btn-primary">Want to Cook</button>
+          <button
+            onClick={() => handleCookBtn(recipe)}
+            className="btn btn-primary"
+          >
+            Want to Cook
+          </button>
         </div>
       </div>
     </div>
@@ -38,12 +43,13 @@ const Recipe = ({ recipe }) => {
 };
 
 Recipe.propTypes = {
+  handleCookBtn: PropTypes.func,
   recipe: PropTypes.shape({
     calories: PropTypes.any,
     description: PropTypes.any,
     id: PropTypes.any,
     image: PropTypes.any,
-    ingredients: PropTypes.any,
+    ingredients: PropTypes.array,
     name: PropTypes.any,
     time: PropTypes.any,
   }),
