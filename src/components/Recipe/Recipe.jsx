@@ -10,18 +10,20 @@ const Recipe = ({ handleCookBtn, recipe }) => {
       <figure className="">
         <img src={image} alt="Recipe Image" className="rounded-2xl" />
       </figure>
-      <div className=" p-0 text-start">
-        <h2 className="card-title">{name}</h2>
-        <p className="">{description}</p>
+      <div className=" p-0 text-start space-y-4">
+        <h2 className="card-title pt-4">{name}</h2>
+        <p className="text-[#878787]">{description}</p>
         <hr />
-        <h3>Ingredients: {ingredients.length}</h3>
-        <ul className="list-disc ml-4 min-h-36">
+        <h3 className="text-[18px] font-medium">
+          Ingredients: {ingredients.length}
+        </h3>
+        <ul className="list-disc ml-4 min-h-36 text-[#878787] ">
           {ingredients.map((ingredient, idx) => (
             <Ingredient key={idx} ingredient={ingredient}></Ingredient>
           ))}
         </ul>
         <hr />
-        <div className="flex gap-4">
+        <div className="flex gap-4 text-[#282828CC]">
           <div className="flex  items-center gap-2">
             <FaRegClock /> <span>{time} minutes</span>
           </div>
@@ -32,7 +34,7 @@ const Recipe = ({ handleCookBtn, recipe }) => {
         <div className="card-actions">
           <button
             onClick={() => handleCookBtn(recipe)}
-            className="btn btn-primary"
+            className="btn rounded-full bg-[#0BE58A] "
           >
             Want to Cook
           </button>

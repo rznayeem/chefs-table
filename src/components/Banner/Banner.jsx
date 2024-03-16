@@ -27,9 +27,10 @@ const Banner = () => {
               class tailored for you!
             </h1>
             <p className="mb-10">
-              Learn and Master Basic Programming, Data Structures, Algorithm,
-              OOP, Database and solve 500+ coding <br /> problems to become an
-              exceptionally well world-class Programmer.
+              Unlock the secrets of culinary mastery with our exceptional
+              cooking classes tailored just for you!{' '}
+              <br className="lg:flex hidden" /> Join us and unleash your inner
+              chef while indulging in the joy of cooking.
             </p>
             <div>
               <button className="btn bg-[#0BE58A] rounded-full border-none mr-6">

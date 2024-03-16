@@ -43,10 +43,10 @@ function App() {
             Our Recipes
           </h1>
           <p className="text-[#150B2B99]">
-            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-            vulputate netus pharetra rhoncus. Eget
-            <br className="lg:flex hidden" /> urna volutpat curabitur elementum
-            mauris aenean neque.
+            Welcome to our treasure trove of culinary delights! Our recipes are
+            carefully crafted with clear, step-by-step instructions and
+            <br className="lg:flex hidden" /> handy tips to help even the most
+            novice cooks achieve delicious results with confidence.
           </p>
           <div className="mt-12 lg:grid grid-cols-12 gap-10">
             <Recipes handleCookBtn={handleCookBtn}></Recipes>
