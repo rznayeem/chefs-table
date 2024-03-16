@@ -25,6 +25,7 @@ Cook.propTypes = {
     name: PropTypes.any,
     time: PropTypes.any,
   }),
+  handlePreparingBtn: PropTypes.func,
   idx: PropTypes.number,
 };
 

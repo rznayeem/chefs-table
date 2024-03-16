@@ -57,6 +57,8 @@ const Table = ({ selectedRecipes, handlePreparingBtn, cookingRecipes }) => {
 };
 
 Table.propTypes = {
+  cookingRecipes: PropTypes.array,
+  handlePreparingBtn: PropTypes.any,
   selectedRecipes: PropTypes.array,
 };
 

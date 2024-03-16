@@ -24,6 +24,10 @@ function App() {
 
   const handlePreparingBtn = cook => {
     setCookingRecipes([...cookingRecipes, cook]);
+    const cookedRecipe = selectedRecipes.filter(
+      filteredRecipe => filteredRecipe.id !== cook.id
+    );
+    setSelectedRecipes(cookedRecipe);
   };
 
   return (
