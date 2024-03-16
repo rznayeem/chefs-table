@@ -6,18 +6,18 @@ const Recipe = ({ recipe }) => {
   const { image, id, name, description, ingredients, time, calories } = recipe;
 
   return (
-    <div className="card w-96 p-6 bg-base-100 shadow-xl">
+    <div className="card p-6 bg-base-100 shadow-xl border-2">
       <figure className="">
         <img src={image} alt="Recipe Image" className="rounded-2xl" />
       </figure>
-      <div className="card-body p-0 text-start">
+      <div className=" p-0 text-start">
         <h2 className="card-title">{name}</h2>
         <p className="">{description}</p>
         <hr />
         <h3>Ingredients: {ingredients.length}</h3>
-        <ul className="list-disc ml-4">
+        <ul className="list-disc ml-4 min-h-36">
           {ingredients.map(ingredient => (
-            <Ingredient ingredient={ingredient}></Ingredient>
+            <Ingredient key={id} ingredient={ingredient}></Ingredient>
           ))}
         </ul>
         <hr />

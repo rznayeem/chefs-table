@@ -2,6 +2,7 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import Navbar from './components/Navbar/Navbar';
 import Recipes from './components/Recipes/Recipes';
+import Table from './components/Table/Table';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
             <br className="lg:flex hidden" /> urna volutpat curabitur elementum
             mauris aenean neque.
           </p>
-          <div>
+          <div className="mt-12 lg:grid grid-cols-12 gap-10">
             <Recipes></Recipes>
+            <Table></Table>
           </div>
         </section>
       </div>

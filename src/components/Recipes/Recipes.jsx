@@ -11,7 +11,7 @@ const Recipes = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2">
+    <div className="lg:grid grid-cols-2 col-span-7 gap-6">
       {recipes.map((recipe, idx) => (
         <Recipe key={idx} recipe={recipe}></Recipe>
       ))}
