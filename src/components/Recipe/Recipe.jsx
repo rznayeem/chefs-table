@@ -3,7 +3,7 @@ import Ingredient from './Ingredient/Ingredient';
 import { FaRegClock } from 'react-icons/fa6';
 import { AiOutlineFire } from 'react-icons/ai';
 const Recipe = ({ handleCookBtn, recipe }) => {
-  const { image, id, name, description, ingredients, time, calories } = recipe;
+  const { image, name, description, ingredients, time, calories } = recipe;
 
   return (
     <div className="card p-6 bg-base-100 shadow-xl border-2">

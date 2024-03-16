@@ -12,7 +12,7 @@ const Recipes = ({ handleCookBtn }) => {
   }, []);
 
   return (
-    <div className="lg:grid grid-cols-2 col-span-7 gap-6">
+    <div className="grid lg:pb-0 pb-12 lg:grid-cols-2 grid-cols-1 col-span-7 gap-6">
       {recipes.map((recipe, idx) => (
         <Recipe
           handleCookBtn={handleCookBtn}

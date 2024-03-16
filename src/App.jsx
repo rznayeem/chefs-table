@@ -6,6 +6,7 @@ import Recipes from './components/Recipes/Recipes';
 import Table from './components/Table/Table';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [selectedRecipes, setSelectedRecipes] = useState([]);
@@ -58,6 +59,7 @@ function App() {
         </section>
         <ToastContainer />
       </div>
+      <Footer></Footer>
     </>
   );
 }
