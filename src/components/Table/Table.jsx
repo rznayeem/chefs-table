@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types';
 import Cook from '../Cook/Cook';
+import Cooking from '../Cooking/Cooking';
 
-const Table = ({ selectedRecipes }) => {
-  const handlePreparingBtn = cook => {
-    console.log(cook);
-  };
-
+const Table = ({ selectedRecipes, handlePreparingBtn, cookingRecipes }) => {
   return (
     <div className="overflow-x-auto border-2 rounded-2xl col-span-5">
       <table className="table table-zebra">
@@ -36,7 +33,9 @@ const Table = ({ selectedRecipes }) => {
         </tbody>
       </table>
       <table className="table table-zebra">
-        <caption className="caption-top">Currently cooking: 02</caption>
+        <caption className="caption-top">
+          Currently cooking: {cookingRecipes.length}
+        </caption>
         {/* head */}
         <thead>
           <tr>
@@ -46,7 +45,12 @@ const Table = ({ selectedRecipes }) => {
             <th>Calories</th>
           </tr>
         </thead>
-        <tbody>{/* row 1 */}</tbody>
+        <tbody>
+          {/* row 1 */}
+          {cookingRecipes.map((cooking, idx) => (
+            <Cooking idx={idx} key={idx} cooking={cooking}></Cooking>
+          ))}
+        </tbody>
       </table>
     </div>
   );

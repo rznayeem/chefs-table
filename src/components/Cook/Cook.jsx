@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 const Cook = ({ cook, idx, handlePreparingBtn }) => {
   const { name, time, calories } = cook;
-  // let count = 0;
-  // for (let i = 1; i < selectedRecipes.length; i++) {
-  //   count = i;
-  // }
   return (
     <tr>
       <th>{idx + 1}</th>

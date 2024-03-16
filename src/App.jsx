@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [selectedRecipes, setSelectedRecipes] = useState([]);
+  const [cookingRecipes, setCookingRecipes] = useState([]);
 
   const handleCookBtn = recipe => {
     const isExist = selectedRecipes.find(
@@ -20,6 +21,11 @@ function App() {
       toast('You already selected this recipe..');
     }
   };
+
+  const handlePreparingBtn = cook => {
+    setCookingRecipes([...cookingRecipes, cook]);
+  };
+
   return (
     <>
       <header className="container mx-auto">
@@ -39,7 +45,11 @@ function App() {
           </p>
           <div className="mt-12 lg:grid grid-cols-12 gap-10">
             <Recipes handleCookBtn={handleCookBtn}></Recipes>
-            <Table selectedRecipes={selectedRecipes}></Table>
+            <Table
+              handlePreparingBtn={handlePreparingBtn}
+              selectedRecipes={selectedRecipes}
+              cookingRecipes={cookingRecipes}
+            ></Table>
           </div>
         </section>
         <ToastContainer />
