@@ -19,7 +19,7 @@ function App() {
     if (!isExist) {
       setSelectedRecipes([...selectedRecipes, recipe]);
     } else {
-      toast('You already selected this recipe..');
+      toast.warn('No double dipping! Recipe already selected...');
     }
   };
 
